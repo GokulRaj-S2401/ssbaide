@@ -115,7 +115,7 @@ p.authNav{
     font-size: 18px;
     color:#938D8D;
     width:40%;
-    margin: 10px 30% auto;
+    margin: 10px 30% auto;  
 }
 .sitImg{
     width: 300px;
@@ -129,6 +129,16 @@ p.authNav{
     right: 2%;
     bottom: -20px;
 }
+.menu{
+    display: none;
+}
+.menuList{
+    display: block;
+}
+.menuShow{
+    display: block !important;
+}
+
 @font-face {
     font-family:regular;
     src: url('../../fonts/ssb-regular.ttf');
@@ -136,4 +146,47 @@ p.authNav{
 @font-face {
     font-family: bold;
     src: url('../../fonts/Alatsi-Regular.ttf');
+}
+@media screen and (max-width:576px){
+    .menu{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .headContent{
+        display: block;
+    }
+    header{
+        background-color: #f7f7f7;
+    }
+    .menuBtn{
+        padding: 2px 5px;
+        background-color: rgb(201, 196, 196);
+        border: none;
+        border-radius: 2px;
+    }
+    header .headContent nav{
+        display: none;
+    }
+    header .headContent nav{
+        padding: 10px;
+    }
+    .menuBtn img{
+        width:25px;
+    }
+    header .headContent nav ul{
+        display: block;
+    }
+    header .headContent .auth{
+        display: none;
+    }
+    header .headContent nav ul li{
+        padding: 10px 5px;
+        text-align: center;
+    }
+    header .headContent nav ul li a{
+        font-size: 17px;
+        text-align: center;
+    }
+    
 }
